@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/photon.css">
+  <link rel="stylesheet" href="./css/photon.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <meta name="keywords" content="">
+  <title>Document</title>
+</head>
+<body>
+    <!-- Wrap your entire app inside .window -->
+    <div class="window">
+      <header class="toolbar toolbar-header">
+        <!-- Toolbar title -->
+
+  <div class="toolbar-actions">
+    <div class="btn-group">
+      <button class="btn btn-default">
+        <span class="icon icon-home"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-folder"></span>
+      </button>
+      <button class="btn btn-default active">
+        <span class="icon icon-cloud"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-popup"></span>
+      </button>
+      <button class="btn btn-default">
+        <span class="icon icon-shuffle"></span>
+      </button>
+    </div>
+
+        <h1 class="title">Header</h1>
+      </header>
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane-sm sidebar">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ad nulla est laboriosam deleniti nobis. Eius molestias unde aliquid! Optio ullam, ducimus explicabo voluptatibus beatae excepturi aperiam doloremque repellat tempora.</div>
+          <div class="pane">
+
+        
+          
+        </div>
+      </div>
+      <footer class="toolbar toolbar-footer">
+        <h1 class="title">Footer</h1>
+      </footer>
+    </div>
+<script >
+  var read=require('read-file-utf8')
+  const loki=require('lokijs')
+const db=new loki('db.json')
+console.log(read(__dirname+'./db.json'));
+console.log(db);
+db.l
+var clientes=db.collections('clientes')
+</script>
+</body>
+</html>
